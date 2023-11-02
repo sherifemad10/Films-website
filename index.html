@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-black container" >
+    <nav class="navbar navbar-expand-lg  mt-3">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light fw-bolder fa-3x fst-italic" href="#">Filmz</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-light "></span>
+          </button>
+          <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-light mx-4" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light mx-4" href="#">Flimes</a>
+              </li>
+              <li class="nav-item dropdown text-light">
+                <a class="nav-link dropdown-toggle text-light mx-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Movies
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-black" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-black" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-black" href="#">Drama</a></li>
+                </ul>
+              </li>
+              <li class="nav-item text-light mx-4">
+                <a class="nav-link disabled text-light" aria-disabled="true">Series</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+              <button class="btn btn-outline-light mx-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">login</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- //nav -->
+<!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade position-relative" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary position-absolute bottom-10 start-0 mx-2" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-outline-dark">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- //login -->
+
+      
+      <div id="carouselExampleInterval" class="carousel slide my-3" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height: 85vh;" >
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/Oppenheimer ban.jpg" class="d-block w-100" alt="Oppenheimer" style="height: 85vh;">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/cats banner.jpg" class="d-block w-100" alt="cats" style="height: 85vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/creedbanner.jpeg" class="d-block w-100" alt="creed" style="height: 85vh;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/John Wickbner.jpeg" class="d-block w-100" alt="John Wick" style="height: 85vh;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- // slide -->
+      <div class="line1 bg-secondary" style="width: 100%;height: 8px;opacity: 0.5;"></div>
+      <!-- //line -->
+      <section class="container d-sm-block d-lg-flex mx-3 my-5">
+        <div class="tvtext m-lg-auto mx-5 text-md-center text-xs-center">
+        <h2 class="text-light col-mb-12 fs-1 fw-bolder my-md-4 my-sm-5">Enjoy on your TV</h2>
+        <h4 class="text-light col-lg-8 fs-5 col-mb-12 mx-auto ">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h4>
+         </div>
+        <div class="tv col-md-12  col-lg-5 text-md-center">
+            <!-- <img src="img/tv.png" class="w-75 mb-5 "> -->
+            <video class="w-75 my-5 text-md-center " src="img/video.mp4" class="object-fit-none" autoplay muted></video>
+            
+        </div>
+        
+      </section>
+  <div class="line1 bg-secondary" style="width: 100%;height: 8px;opacity: .5;"></div>
+      <!-- //line -->
+      <section class="container d-sm-block d-lg-flex mx-3">
+        <div class="tv col-md-12  col-lg-5 text-md-center">
+          <img src="img/down.jpg" class="w-75 mb-5 ">
+      </div>
+        <div class="tvtext m-lg-auto mx-5 text-md-center text-xs-center">
+        <h2 class="text-light  col-mb-12 fs-1 fw-bolder my-md-4 mx-auto">Download your shows to watch offline</h2>
+        <h4 class="text-light  col-lg-8 fs-5 col-mb-12 mx-auto my-sm-5">Save your favorites easily and always have something to watch.</h4>
+         </div>
+       
+        
+      </section>
+  <div class="line1 bg-secondary" style="width: 100%;height: 8px;opacity: .5;"></div>
+      <!-- //line -->
+      <h2 class="movies my-5 text-center text-light">The Latest Movies</h2>
+
+      <section class=" container d-sm-block d-lg-flex  my-5 flex-lg-wrap column-gap-lg-4 column-gap-md-2 justify-content-center">
+        <div class="card  col-lg-3 col-md-12 col-sm-12 mb-5">
+          <img src="img/Boogeyman2023.jpg" class="card-img-top" alt="Boogeyman2023">
+          <div class="card-body ">
+            <h5 class="card-title text-center"> Boogeyman </h5>
+          </div>
+        </div>
+        <!-- //card1 -->
+        <div class="card col-lg-3 col-md-12 col-sm-12 mb-5">
+          <img src="img/Elemental4.jpg" class="card-img-top" alt="Elemental">
+          <div class="card-body ">
+            <h5 class="card-title text-center">Elemental </h5>
+          </div>
+        </div>
+        <!-- //card2 -->
+        <div class="card  col-lg-3 col-md-12 col-sm-12 mb-5">
+          <img src="img/Peterpanwendy1.jpg" class="card-img-top" alt="Peter Pan & Wendy (Disney+)">
+          <div class="card-body ">
+            <h5 class="card-title text-center">Peter Pan & Wendy (Disney+) </h5>
+          </div>
+        </div>
+        <!-- //card3 -->
+        <div class="card col-lg-3 col-md-12 col-sm-12 mb-5">
+          <img src="img/Missionimpossibledeadreckoning.jpg" class="card-img-top" alt="Mission: Impossible – Dead Reckoning Part One">
+          <div class="card-body ">
+            <h5 class="card-title text-center">Mission: Impossible – Dead Reckoning Part One</h5>
+          </div>
+        </div>
+        <!-- //caed4 -->
+        <div class="card  col-lg-3 col-md-12 col-sm-12 mb-5">
+          <img src="img/Indianajonesandthedialofdestiny.jpg" class="card-img-top" alt="Indiana Jones and the Dial of Destiny">
+          <div class="card-body ">
+            <h5 class="card-title text-center">Indiana Jones and the Dial of Destiny</h5>
+          </div>
+        </div>
+        <!-- //card5 -->
+        <div class="card  col-lg-3 col-md-12 col-sm-12 mb-5">
+          <img src="img/Creed35.jpg" class="card-img-top" alt="Creed III (Rocky 9)">
+          <div class="card-body ">
+            <h5 class="card-title text-center">Creed III (Rocky 9) </h5>
+          </div>
+        </div>
+        <!-- //card6 -->
+
+      </section>
+      <!-- // card -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item active "><a class="page-link" href="#">1</a></li>
+          <li class="page-item "><a class="page-link" href="#">2</a></li>
+          <li class="page-item "><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- //page -->
+      <div class="line1 bg-secondary" style="width: 100%;height: 8px;opacity: .5;"></div>
+      <!-- //line -->
+      <section class="container">
+        <h2 class="text-center pb-5 text-light mt-5 ">Rate The Site</h2>
+        <div class="d-lg-flex d-md-block align-items-center ">
+          <div class="text-light mx-5 w-25">
+            <h2 class="fa-4x">4.4</h2>
+            <i class="fa-solid fa-star text-primary"></i> <i class="fa-solid fa-star text-primary"></i> <i class="fa-solid fa-star text-primary"></i> <i class="fa-solid fa-star text-primary"></i> <i class="fa-regular fa-star"></i>
+
+          </div>
+          <div class="w-100 mx-5 ">
+            <span class="text-light">5</span>
+        <div class="progress w-75 mb-4" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+         <div class="progress-bar" style="width: 70%">70%</div>
+        </div>
+        <span class="text-light">4</span>
+        <div class="progress w-75 mb-4" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 10%">10%</div>
+         </div>
+         <span class="text-light">3</span>
+         <div class="progress w-75 mb-4" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 5%">5%</div>
+         </div>
+         <span class="text-light">2</span>
+         <div class="progress w-75 mb-4" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 3%">3%</div>
+         </div>
+         <span class="text-light">1</span>
+         <div class="progress w-75 mb-4" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar" style="width: 2%">2%</div>
+         </div>
+        </div>
+      </div>
+      </section>
+      <!-- //rate -->
+      <div class="line1 bg-secondary" style="width: 100%;height: 8px;opacity: .5;"></div>
+      <!-- //line -->
+      <section class="container">
+        <h2 class="text-center pb-5 text-light mt-5 ">Frequently Asked Questions</h2>
+
+        <div class="accordion accordion-flush " id="accordionFlushExample">
+          <div class="accordion-item mb-3 bg-dark text-light">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What is Filmz?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Filmz is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+              You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3 bg-dark text-light">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How much does Filmz cost?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from EGP70 to EGP165 a month. No extra costs, no contracts.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3 bg-dark text-light">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Where can I watch?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3 bg-dark text-light">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                How do I cancel?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Filmz is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div>
+            </div>
+          </div>
+          <div class="accordion-item mb-3 bg-dark text-light">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                What can I watch on Filmz?
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Filmz has an extensive library of feature films, documentaries, TV shows, anime, award-winning Filmz originals, and more. Watch as much as you want, anytime you want.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //Questions -->
+      <form class="row g-3 justify-content-center my-5">
+        <div class="col-3">
+          <label for="exampleInputEmail1" class="visually-hidden">Password</label>
+          <input type="email" class="form-control h-100 " id="exampleInputEmail1" placeholder="Your Email" >
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3 h-100">Get Started</button>
+        </div>
+      </form>
+      <div class="line1 bg-secondary" style="width: 100%;height: 8px;opacity: .5;"></div>
+      <!-- //line -->
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #000">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 fw-bolder fa-4x">
+              Filmz
+            </h6>
+            <p>
+              Filmz is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">links</h6>
+            <p>
+              <a class="text-white">Questions? Contact us.</a>
+            </p>
+            <p>
+              <a class="text-white">Privacy</a>
+            </p>
+            <p>
+              <a class="text-white">Speed Test</a>
+            </p>
+            <p>
+              <a class="text-white">Investor Relations</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Useful links
+            </h6>
+            <p>
+              <a class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a class="text-white">Help Center</a>
+            </p>
+            <p>
+              <a class="text-white">Cookie Preferences</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2023 Copyright:
+              <a class="text-white" href="https://github.com/sherifemad10">Sherif Emad</a>
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"><i class="fab fa-instagram"></i></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
